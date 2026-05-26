@@ -1,1 +1,506 @@
-hiii
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zenovex Privacy Policy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0d0f14;
+      --surface: #13161d;
+      --border: #1e2230;
+      --accent: #5b8cff;
+      --accent-dim: rgba(91, 140, 255, 0.12);
+      --text-primary: #e8eaf0;
+      --text-secondary: #8a90a8;
+      --text-muted: #4a5070;
+      --heading-font: 'DM Serif Display', Georgia, serif;
+      --body-font: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    html {
+      font-size: 16px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--body-font);
+      font-weight: 300;
+      line-height: 1.8;
+      padding: 0 1rem;
+      min-height: 100vh;
+    }
+
+    /* ── Topbar stripe ── */
+    .topbar {
+      width: 100%;
+      background: linear-gradient(90deg, #1a2040 0%, #0d1025 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 0.65rem 0;
+      text-align: center;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0 -1rem;
+      width: calc(100% + 2rem);
+    }
+
+    /* ── Wrapper ── */
+    .wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 0 6rem;
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 3.5rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .app-label {
+      display: inline-block;
+      font-size: 0.68rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.9rem;
+      font-family: var(--body-font);
+    }
+
+    h1 {
+      font-family: var(--heading-font);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      color: var(--text-primary);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.2rem;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 400;
+    }
+
+    .meta span {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ── Intro box ── */
+    .intro-box {
+      background: var(--accent-dim);
+      border: 1px solid rgba(91, 140, 255, 0.25);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 3rem;
+      font-size: 0.93rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .intro-box strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* ── Section ── */
+    section {
+      margin-bottom: 2.8rem;
+    }
+
+    h2 {
+      font-family: var(--heading-font);
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.01em;
+    }
+
+    h3 {
+      font-family: var(--body-font);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-top: 1.6rem;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.4rem 0 1rem;
+    }
+
+    ul li {
+      font-size: 0.93rem;
+      color: var(--text-secondary);
+      padding: 0.3rem 0 0.3rem 1.3rem;
+      position: relative;
+      font-weight: 300;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.72rem;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.6;
+    }
+
+    /* ── Highlight cards ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.2rem 0;
+    }
+
+    .card p {
+      margin-bottom: 0.5rem;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── External links ── */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(91, 140, 255, 0.35);
+      transition: border-color 0.2s;
+    }
+
+    a:hover {
+      border-color: var(--accent);
+    }
+
+    /* ── Permission table ── */
+    .perm-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.88rem;
+    }
+
+    .perm-table th {
+      text-align: left;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      font-weight: 500;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .perm-table td {
+      padding: 0.7rem 0.9rem;
+      vertical-align: top;
+      color: var(--text-secondary);
+      border-bottom: 1px solid rgba(30, 34, 48, 0.6);
+    }
+
+    .perm-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .perm-table td:first-child {
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      color: var(--accent);
+      white-space: nowrap;
+      width: 38%;
+    }
+
+    /* ── "Does not collect" callout ── */
+    .not-collected {
+      background: rgba(20, 30, 20, 0.6);
+      border: 1px solid rgba(60, 180, 100, 0.2);
+      border-left: 3px solid rgba(60, 180, 100, 0.7);
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+
+    .not-collected p {
+      color: rgba(160, 220, 160, 0.8);
+      font-size: 0.88rem;
+      margin-bottom: 0;
+    }
+
+    .not-collected strong {
+      color: rgba(160, 220, 160, 1);
+    }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--text-secondary);
+      border-bottom-color: rgba(138, 144, 168, 0.3);
+    }
+
+    footer a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .perm-table th:nth-child(2),
+      .perm-table td:nth-child(2) {
+        display: none;
+      }
+      .perm-table td:first-child {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">Zenovex &mdash; Android Brain Training &amp; Puzzle Game</div>
+
+  <div class="wrapper">
+
+    <header>
+      <span class="app-label">Privacy Policy</span>
+      <h1>How Zenovex Handles Your Data</h1>
+      <p class="meta">Last updated: <span>26 May 2026</span> &nbsp;&middot;&nbsp; Developer: Sudip &nbsp;&middot;&nbsp; Package: com.sudip.zenovex</p>
+    </header>
+
+    <div class="intro-box">
+      <strong>The short version:</strong> Zenovex stores all your game progress locally on your device. We never collect, transmit, or store any personal data on our servers &mdash; because we do not have a server. The only external data flow is through Google AdMob, which serves ads as described below.
+    </div>
+
+    <!-- 1. About Zenovex -->
+    <section>
+      <h2>1. About Zenovex</h2>
+      <p>Zenovex is a free, offline brain-training and puzzle game for Android containing nine mini-games: Quick Math, Number Sprint, Word Recall (Mystery Word), Spelling Rush (Word Scramble), Sequence Shift (Sequence Memory), Mirror Match, Chromatic Flow, Word Forge, and Equation Nova.</p>
+      <p>The app includes daily challenges, login streaks, achievements, and an in-game soft currency ("coins") that can be earned through gameplay or by watching optional rewarded ads. It is free to download and play; there are no in-app purchases or subscriptions.</p>
+      <p>This Privacy Policy explains what information is handled when you use Zenovex, how it is stored, and what rights you have over it.</p>
+    </section>
+
+    <!-- 2. Information We Collect and How It Is Stored -->
+    <section>
+      <h2>2. Information Stored on Your Device</h2>
+      <p>Zenovex stores the following data <strong>locally on your device</strong> using Android SharedPreferences. This data never leaves your device and is never sent to the developer or any third-party analytics service.</p>
+
+      <h3>Player Profile</h3>
+      <ul>
+        <li>Display name you choose (optional; defaults to "Player")</li>
+        <li>Avatar ID selected from a fixed built-in set (no photo uploads)</li>
+        <li>Install timestamp (used locally to determine "member since" display and seed the default avatar)</li>
+      </ul>
+
+      <h3>Gameplay Progress</h3>
+      <ul>
+        <li>Scores, best scores, and levels reached per game</li>
+        <li>Total games played, accuracy statistics, combo records, correct and incorrect answer counts</li>
+        <li>Daily challenge progress and completion history</li>
+        <li>Streak count and daily login reward history</li>
+        <li>Achievement unlock dates</li>
+      </ul>
+
+      <h3>In-Game Economy</h3>
+      <ul>
+        <li>Coin balance and lifetime coins earned</li>
+        <li>Power-up inventory (hints, extra time, skips)</li>
+        <li>Unlocked themes and purchased in-game music tracks</li>
+      </ul>
+
+      <h3>Settings &amp; Preferences</h3>
+      <ul>
+        <li>Sound effects on/off, background music on/off</li>
+        <li>Master volume and SFX volume levels</li>
+        <li>Haptic feedback on/off</li>
+        <li>Dark mode on/off</li>
+        <li>Active theme and active music track</li>
+      </ul>
+
+      <div class="not-collected">
+        <p><strong>What we do not collect:</strong> Real names, email addresses, phone numbers, passwords, photos, camera or microphone input, contacts, calendar data, SMS or call logs, GPS or IP-based location, files outside the app sandbox, crash logs, analytics events, or any behavioral telemetry. No user-generated content is uploaded anywhere.</p>
+      </div>
+    </section>
+
+    <!-- 3. How to Delete Your Data -->
+    <section>
+      <h2>3. How to Delete Your Data</h2>
+      <p>You are in full control of your locally stored data. You can erase it at any time using any of the following methods:</p>
+      <ul>
+        <li>Use the <strong>in-app "Reset all data"</strong> option found in the Settings screen.</li>
+        <li><strong>Uninstall the app</strong> &mdash; Android removes all app data automatically.</li>
+        <li>Go to <strong>Android Settings &rarr; Apps &rarr; Zenovex &rarr; Storage &rarr; Clear Data</strong>.</li>
+      </ul>
+      <p>Because no data is ever transmitted off your device, the developer holds no copies and has nothing further to delete.</p>
+    </section>
+
+    <!-- 4. Third-Party Services: Google AdMob -->
+    <section>
+      <h2>4. Third-Party Services: Google AdMob</h2>
+      <p>Zenovex integrates the <strong>Google Mobile Ads SDK (AdMob)</strong> to display banner, interstitial, and optional rewarded video advertisements. AdMob is operated by Google LLC and may collect and process certain information to serve and measure ads. This data is collected and controlled by Google, not by the developer.</p>
+
+      <h3>Information AdMob May Collect</h3>
+      <ul>
+        <li>Android Advertising ID (AAID) &mdash; a resettable, non-permanent identifier</li>
+        <li>Device information (model, Android OS version, language, general region)</li>
+        <li>Approximate location derived from IP address (not GPS-level)</li>
+        <li>General usage signals needed to serve and measure ads</li>
+      </ul>
+
+      <div class="card">
+        <p>The developer does not have access to individual user-level ad data collected by Google. For full details on how Google processes this information, please review:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+          <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use its services</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob &amp; AdSense: About ads personalization</a></li>
+        </ul>
+      </div>
+
+      <h3>Managing Ad Personalization</h3>
+      <p>You can reset or limit ad personalization on your Android device at any time:</p>
+      <ul>
+        <li>Go to <strong>Android Settings &rarr; Privacy &rarr; Ads &rarr; Reset advertising ID</strong></li>
+        <li>Or select <strong>Opt out of ads personalization</strong> in the same menu</li>
+      </ul>
+
+      <p>Zenovex does not use Firebase Analytics, Firebase Crashlytics, Google Analytics, the Facebook SDK, or any other analytics, attribution, or crash-reporting SDK.</p>
+    </section>
+
+    <!-- 5. Permissions -->
+    <section>
+      <h2>5. App Permissions</h2>
+      <p>Zenovex requests only the following Android permissions:</p>
+
+      <table class="perm-table">
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Why It Is Needed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>INTERNET</td>
+            <td>Required by the Google Mobile Ads SDK to fetch advertisements.</td>
+          </tr>
+          <tr>
+            <td>ACCESS_NETWORK_STATE</td>
+            <td>Required by the Google Mobile Ads SDK to detect connectivity before requesting ads.</td>
+          </tr>
+          <tr>
+            <td>VIBRATE</td>
+            <td>Used to provide optional haptic feedback during gameplay. Can be disabled in Settings.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="not-collected">
+        <p><strong>Not requested:</strong> Camera, microphone, location, contacts, storage, phone, SMS, calendar, or account access permissions.</p>
+      </div>
+    </section>
+
+    <!-- 6. Children's Privacy -->
+    <section>
+      <h2>6. Children's Privacy</h2>
+      <p>Zenovex is a general-audience brain-training game and is not specifically directed at children under the age of 13. The app does not knowingly collect any personal information from children.</p>
+      <p>The only data stored is local gameplay progress that never leaves the device. If a parent or guardian believes their child has provided any information through the app, they can erase it immediately by uninstalling the app or using the in-app "Reset all data" option.</p>
+      <p>Ad serving is handled by Google AdMob. The developer configures ad requests to be treated as non-personalized where applicable law (including COPPA and GDPR for minors) requires it.</p>
+    </section>
+
+    <!-- 7. Your Privacy Rights (GDPR / CCPA) -->
+    <section>
+      <h2>7. Your Privacy Rights</h2>
+      <p>Because Zenovex stores all gameplay data on your own device and does not transmit any personal data to the developer, the developer does not maintain personal data records about individual users.</p>
+      <p>Users in the European Economic Area, the United Kingdom, California, and other jurisdictions with similar data protection laws retain the right to access, correct, or delete their data. You can exercise these rights directly on your own device:</p>
+      <ul>
+        <li>Use the in-app <strong>"Reset all data"</strong> option to erase all locally stored data.</li>
+        <li>Uninstall the app to remove all data automatically.</li>
+        <li>Clear app data via <strong>Android Settings &rarr; Apps &rarr; Zenovex &rarr; Storage &rarr; Clear Data</strong>.</li>
+        <li>Reset or opt out of ad personalization via <strong>Android Settings &rarr; Privacy &rarr; Ads</strong>.</li>
+      </ul>
+      <p>For data processed by Google AdMob, please refer to Google's privacy policy and exercise rights directly with Google.</p>
+    </section>
+
+    <!-- 8. Data Retention -->
+    <section>
+      <h2>8. Data Retention</h2>
+      <p>Data stored locally on your device persists until you choose to clear it, using any of the methods described in Section 3. The developer retains no copies, because no data is ever transmitted off the device.</p>
+    </section>
+
+    <!-- 9. Changes to This Policy -->
+    <section>
+      <h2>9. Changes to This Policy</h2>
+      <p>This Privacy Policy may be updated from time to time as the app evolves. The "Last updated" date at the top of this page will always reflect the most recent version. Material changes will be noted in the app's release notes on Google Play.</p>
+      <p>We encourage you to review this policy periodically. Continued use of Zenovex after any changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <!-- 10. Contact -->
+    <section>
+      <h2>10. Contact</h2>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of data within Zenovex, please contact:</p>
+      <div class="card">
+        <p><strong>Developer:</strong> Sudip</p>
+        <p><strong>App:</strong> Zenovex (com.sudip.zenovex)</p>
+        <p><strong>Email:</strong> <a href="mailto:sudip1767@gmail.com">sudip1767@gmail.com</a></p>
+        <p><strong>Platform:</strong> Android (Google Play)</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Sudip. Zenovex is available on Google Play for Android.</p>
+      <p style="margin-top: 0.5rem;">Questions? Contact <a href="mailto:sudip1767@gmail.com">sudip1767@gmail.com</a></p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
