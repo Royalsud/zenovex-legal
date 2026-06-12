@@ -1,1 +1,94 @@
-<h1>Hiii</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zenovex - Train Your Brain</title>
+  <meta name="description" content="Zenovex is a fast, colorful brain-training game with math, word, pattern, memory, and leaderboard challenges. Download the Android app now." />
+  <meta name="theme-color" content="#18091c" />
+  <style>
+    :root{
+      --bg:#090612; --panel:#160b2b; --panel2:#2a1040; --cyan:#18d8f2; --pink:#ff5bb7; --gold:#ffc94b; --green:#42ddb2; --text:#fff; --muted:#c7b8d7;
+      --radius:28px; --shadow:0 30px 90px rgba(0,0,0,.45); --max:1180px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at 15% 5%,#35105b 0,#090612 35%),radial-gradient(circle at 85% 15%,#122a71 0,transparent 28%),linear-gradient(180deg,#090612,#160817 65%,#090612);color:var(--text);overflow-x:hidden}
+    a{color:inherit;text-decoration:none} img,video{max-width:100%;display:block}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}.glow{position:absolute;inset:auto;filter:blur(70px);opacity:.55;pointer-events:none}.g1{width:360px;height:360px;background:#8a37ff;top:90px;left:-120px}.g2{width:460px;height:460px;background:#00d4ff;right:-160px;top:420px}.g3{width:360px;height:360px;background:#ff3e9e;left:25%;bottom:220px}
+    header{position:sticky;top:0;z-index:20;background:rgba(9,6,18,.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:24px}.logo{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#3b2377,#ff69c9);display:grid;place-items:center;box-shadow:0 0 30px rgba(255,91,183,.35)}.navlinks{display:flex;gap:22px;color:var(--muted);font-weight:700}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:999px;padding:15px 24px;font-weight:900;letter-spacing:.2px;background:linear-gradient(135deg,var(--cyan),#50f6ff);color:#06121c;box-shadow:0 0 34px rgba(24,216,242,.35);transition:.2s transform,.2s box-shadow}.btn:hover{transform:translateY(-2px);box-shadow:0 0 44px rgba(24,216,242,.55)}.btn.alt{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.16);box-shadow:none}.btn.pink{background:linear-gradient(135deg,#ff5bb7,#b24cff);color:#fff}
+    .hero{position:relative;padding:74px 0 56px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:44px}.eyebrow{color:var(--cyan);font-weight:900;letter-spacing:.18em;text-transform:uppercase}.hero h1{font-size:clamp(44px,8vw,96px);line-height:.92;margin:16px 0 18px;text-transform:uppercase;letter-spacing:-.06em}.grad{background:linear-gradient(90deg,#fff,#55eaff 38%,#ff4fd8 75%,#fff);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 42px rgba(255,79,216,.18)}.lead{font-size:clamp(18px,2.2vw,24px);color:var(--muted);max-width:630px;line-height:1.55}.cta{display:flex;gap:14px;flex-wrap:wrap;margin:30px 0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}.stat{padding:18px;border-radius:22px;background:rgba(255,255,255,.065);border:1px solid rgba(255,255,255,.1)}.stat b{font-size:28px}.stat span{display:block;color:var(--muted);font-size:14px;margin-top:4px}.hero-card{position:relative;border-radius:34px;padding:10px;background:linear-gradient(135deg,rgba(24,216,242,.8),rgba(255,91,183,.6),rgba(255,201,75,.55));box-shadow:var(--shadow)}.hero-card img{border-radius:26px}.float{position:absolute;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(15px);border-radius:22px;padding:14px 18px;box-shadow:0 18px 55px rgba(0,0,0,.35);font-weight:900}.f1{left:-22px;top:30px}.f2{right:-18px;bottom:38px}.f3{left:18px;bottom:-22px;color:var(--gold)}
+    section{padding:72px 0;position:relative}.section-title{text-align:center;margin-bottom:34px}.section-title h2{font-size:clamp(34px,5vw,58px);margin:0 0 12px;letter-spacing:-.04em}.section-title p{color:var(--muted);font-size:18px;margin:0 auto;max-width:740px;line-height:1.6}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{padding:26px;border-radius:var(--radius);background:linear-gradient(180deg,rgba(45,28,97,.88),rgba(25,11,45,.88));border:1px solid rgba(255,255,255,.1);box-shadow:0 18px 60px rgba(0,0,0,.22)}.ico{font-size:36px;margin-bottom:14px}.feature h3{font-size:24px;margin:0 0 10px}.feature p{color:var(--muted);line-height:1.6;margin:0}.showcase{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}.video-box,.phone-shot{border-radius:30px;background:#080812;border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow);overflow:hidden}.video-box video{width:100%;aspect-ratio:16/9;object-fit:cover}.phone-row{display:flex;gap:18px;overflow:auto;padding:10px 2px 22px;scroll-snap-type:x mandatory}.phone-row img{height:620px;border-radius:38px;scroll-snap-align:center;box-shadow:0 20px 70px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.12);background:#111;flex:0 0 auto}.download{padding:46px;border-radius:36px;background:linear-gradient(135deg,rgba(255,91,183,.18),rgba(24,216,242,.16)),rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;box-shadow:var(--shadow)}.download h2{font-size:clamp(34px,5vw,58px);margin:0 0 10px}.download p{color:var(--muted);font-size:18px;line-height:1.6;margin:0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.step{padding:18px;border-radius:20px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.08)}.step b{color:var(--cyan)}footer{padding:36px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.08);text-align:center}.mobile-only{display:none}
+    @media(max-width:900px){.navlinks{display:none}.hero-grid,.showcase,.download{grid-template-columns:1fr}.hero{padding-top:44px}.hero-card{order:-1}.stats,.features,.steps{grid-template-columns:1fr}.download{text-align:center}.phone-row img{height:560px}.mobile-only{display:inline-flex}}
+    @media(max-width:520px){.wrap{width:min(100% - 22px,var(--max))}.brand{font-size:20px}.nav .btn{padding:12px 15px}.hero h1{font-size:48px}.cta .btn{width:100%}.phone-row img{height:510px}.feature{padding:22px}.download{padding:28px 18px}.float{display:none}}
+  </style>
+</head>
+<body>
+  <div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="logo">🧠</span><span>Zenovex</span></a>
+      <nav class="navlinks"><a href="#features">Features</a><a href="#screens">Screens</a><a href="#download">Download</a></nav>
+      <a class="btn" href="assets/zenovex.apk" download>Download APK</a>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Brain training game</div>
+          <h1><span class="grad">Train Your Brain</span></h1>
+          <p class="lead">Think fast, solve smarter, and challenge your mind with quick math, word recall, pattern puzzles, memory levels, rewards, and global rankings.</p>
+          <div class="cta">
+            <a class="btn pink" href="assets/zenovex.apk" download>⬇ Download Android App</a>
+            <a class="btn alt" href="#screens">View Screenshots</a>
+          </div>
+          <div class="stats">
+            <div class="stat"><b>50</b><span>Word Forge levels</span></div>
+            <div class="stat"><b>9+</b><span>Mini game modes</span></div>
+            <div class="stat"><b>Daily</b><span>Coins & challenges</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/banner.png" alt="Zenovex promotional banner with phone screens and play now message" />
+          <div class="float f1">⚡ Quick challenges</div><div class="float f2">🏆 Leaderboards</div><div class="float f3">🪙 Coin rewards</div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="wrap">
+        <div class="section-title"><h2>Everything in one smart game</h2><p>Zenovex mixes speed, logic, memory, vocabulary, and visual reasoning into one polished mobile experience.</p></div>
+        <div class="features">
+          <div class="feature"><div class="ico">➗</div><h3>Math Games</h3><p>Fast arithmetic, number sequences, and equation-building challenges that sharpen calculation speed.</p></div>
+          <div class="feature"><div class="ico">🔤</div><h3>Word Games</h3><p>Recall, forge, and spell words using hints, timers, levels, and coin rewards.</p></div>
+          <div class="feature"><div class="ico">🎯</div><h3>Pattern Games</h3><p>Memory boards, mirror matching, chromatic flow, and visual puzzles for focus and reasoning.</p></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap showcase">
+        <div>
+          <div class="section-title" style="text-align:left;margin-bottom:20px"><h2>Watch the teaser</h2><p>Show visitors the vibe of Zenovex instantly with this embedded gameplay promo.</p></div>
+          <div class="cta"><a class="btn" href="assets/zenovex.apk" download>Get the APK</a></div>
+        </div>
+        <div class="video-box"><video src="assets/teaser.mp4" controls muted playsinline poster="assets/banner.png"></video></div>
+      </div>
+    </section>
+    <section id="screens">
+      <div class="wrap">
+        <div class="section-title"><h2>App Screenshots</h2><p>Use these screenshots to market the home screen, game categories, gameplay, Word Forge levels, and global leaderboard.</p></div>
+        <div class="phone-row" aria-label="Zenovex screenshots gallery">
+          <img src="assets/screen1.png" alt="Zenovex home screen" /><img src="assets/screen2.png" alt="Math games screen" /><img src="assets/screen3.png" alt="Equation game screen" /><img src="assets/screen4.png" alt="Word recall game" /><img src="assets/screen5.png" alt="Word puzzle with hints" /><img src="assets/screen6.png" alt="Word Forge levels" /><img src="assets/screen7.png" alt="Word Forge board" /><img src="assets/screen8.png" alt="Mirror match game" /><img src="assets/screen9.png" alt="Chromatic flow game" /><img src="assets/screen10.png" alt="Leaderboard screen" />
+        </div>
+      </div>
+    </section>
+    <section id="download">
+      <div class="wrap">
+        <div class="download">
+          <div><h2>Ready to play?</h2><p>Download the Android APK and start training your brain with Zenovex today.</p><div class="steps"><div class="step"><b>1.</b> Download APK</div><div class="step"><b>2.</b> Open on Android</div><div class="step"><b>3.</b> Install & Play</div></div></div>
+          <a class="btn pink" href="assets/zenovex.apk" download>Download Zenovex APK</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">© <span id="year"></span> Zenovex. Train your brain. Think fast. Solve smarter.</div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
